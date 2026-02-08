@@ -4,7 +4,7 @@ import logger
 
 model = YOLO("yolo26s.pt")
 train_results = model.train(
-    data="dataset/aadhaar.yaml",
+    data="aadhaar-classification-dataset/aadhaar.yaml",
     epochs=100,
     imgsz=640,
     device="cpu",
