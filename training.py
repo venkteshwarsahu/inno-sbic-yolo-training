@@ -1,6 +1,6 @@
 from ultralytics import YOLO
-import logger
-
+import logging
+logging.basicConfig(level=logging.INFO)
 
 model = YOLO("yolo26s.pt")
 train_results = model.train(
@@ -11,8 +11,8 @@ train_results = model.train(
 )
 
 metrics = model.val()
-logger.info(metrics)
+logging.info(metrics)
 results = model("image402.jpg")
-logger.info(results)
+logging.info(results)
 path = model.export(format="onnx")
-logger.info(f"Model exported to {path}")
+logging.info(f"Model exported to {path}")
