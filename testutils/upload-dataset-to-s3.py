@@ -4,9 +4,9 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 
-LOCAL_FOLDER = "dataset"
+LOCAL_FOLDER = "aadhaar-classification-dataset"
 BUCKET_NAME = "testsbmaskevent"       
-S3_PREFIX = "sbic/aadhaar-masking-dataset"
+S3_PREFIX = "sbic/aadhaar-classification-dataset"
 
 s3 = boto3.client("s3")
 
