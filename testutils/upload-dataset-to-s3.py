@@ -3,10 +3,10 @@ import boto3
 import logging
 
 logging.basicConfig(level=logging.INFO)
-
-LOCAL_FOLDER = "aadhaar-classification-dataset"
+#s3://testsbmaskevent/sbic/aadhaar-masking-dataset/
+LOCAL_FOLDER = "/Users/venktesh/Documents/Innodeed/SBIC/yolo-training/inno-sbic-yolo-training/Aadhar-data/new aadhar/aadhaar-masking-temp"
 BUCKET_NAME = "testsbmaskevent"       
-S3_PREFIX = "sbic/aadhaar-classification-dataset"
+S3_PREFIX = "sbic/aadhaar-masking-dataset"
 
 s3 = boto3.client("s3")
 

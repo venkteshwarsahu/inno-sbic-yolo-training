@@ -3,8 +3,8 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 
-images_dir = "dataset/images"
-labels_dir = "dataset/labels"
+images_dir = "Aadhar-data/new aadhar/aadhaar-masking-temp/images/val"
+labels_dir = "Aadhar-data/new aadhar/aadhaar-masking-temp/labels/val"
 
 image_files = {os.path.splitext(f)[0] for f in os.listdir(images_dir) if os.path.isfile(os.path.join(images_dir, f))}
 label_files = {os.path.splitext(f)[0] for f in os.listdir(labels_dir) if os.path.isfile(os.path.join(labels_dir, f))}
