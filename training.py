@@ -2,6 +2,7 @@ from ultralytics import YOLO
 import logging
 logging.basicConfig(level=logging.INFO)
 
+logging.info("Training model...")
 model = YOLO("yolo26s.pt")
 train_results = model.train(
     data="dataset/aadhaar.yaml",
